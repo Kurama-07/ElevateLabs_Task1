@@ -1,12 +1,12 @@
 -- Create Author table
 CREATE TABLE Author (
-    author_id INT PRIMARY KEY AUTO_INCREMENT,
+    author_id INTEGER PRIMARY KEY AUTOINCREMENT,
     name VARCHAR(100) NOT NULL
 );
 
 -- Create Book table
 CREATE TABLE Book (
-    book_id INT PRIMARY KEY AUTO_INCREMENT,
+    book_id INTEGER PRIMARY KEY AUTOINCREMENT,
     title VARCHAR(255) NOT NULL,
     genre VARCHAR(50),
     published_year INT
@@ -14,7 +14,7 @@ CREATE TABLE Book (
 
 -- Create Member table
 CREATE TABLE Member (
-    member_id INT PRIMARY KEY AUTO_INCREMENT,
+    member_id INTEGER PRIMARY KEY AUTOINCREMENT,
     name VARCHAR(100),
     join_date DATE
 );
@@ -30,7 +30,7 @@ CREATE TABLE BookAuthor (
 
 -- Create Loan table
 CREATE TABLE Loan (
-    loan_id INT PRIMARY KEY AUTO_INCREMENT,
+    loan_id INTEGER PRIMARY KEY AUTOINCREMENT,
     book_id INT,
     member_id INT,
     loan_date DATE,
